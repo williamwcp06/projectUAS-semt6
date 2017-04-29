@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		686169C8E2D210C23F714EB0 /* Pods_Project_UAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF1DE259710DC4AC6845394 /* Pods_Project_UAS.framework */; };
 		6AD40EAB1EB4402200905622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD40EAA1EB4402200905622 /* AppDelegate.swift */; };
 		6AD40EAD1EB4402200905622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD40EAC1EB4402200905622 /* ViewController.swift */; };
 		6AD40EB01EB4402200905622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD40EAE1EB4402200905622 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DF1DE259710DC4AC6845394 /* Pods_Project_UAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_UAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD40EA71EB4402200905622 /* Project UAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project UAS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD40EAA1EB4402200905622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AD40EAC1EB4402200905622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		6AD40EB11EB4402200905622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AD40EB41EB4402200905622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AD40EB61EB4402200905622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88434F1F7780C8328E35921E /* Pods-Project UAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project UAS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project UAS/Pods-Project UAS.debug.xcconfig"; sourceTree = "<group>"; };
+		C328F0AD3460751D8585E272 /* Pods-Project UAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project UAS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project UAS/Pods-Project UAS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686169C8E2D210C23F714EB0 /* Pods_Project_UAS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56D6C3FE01BE5E5EA6B4C354 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DF1DE259710DC4AC6845394 /* Pods_Project_UAS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AD40E9E1EB4402200905622 = {
 			isa = PBXGroup;
 			children = (
 				6AD40EA91EB4402200905622 /* Project UAS */,
 				6AD40EA81EB4402200905622 /* Products */,
+				89AEDCF63475E39ADE1D6F6A /* Pods */,
+				56D6C3FE01BE5E5EA6B4C354 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Project UAS";
 			sourceTree = "<group>";
 		};
+		89AEDCF63475E39ADE1D6F6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88434F1F7780C8328E35921E /* Pods-Project UAS.debug.xcconfig */,
+				C328F0AD3460751D8585E272 /* Pods-Project UAS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AD40EB91EB4402200905622 /* Build configuration list for PBXNativeTarget "Project UAS" */;
 			buildPhases = (
+				299377368B63771FD5E43C9A /* [CP] Check Pods Manifest.lock */,
 				6AD40EA31EB4402200905622 /* Sources */,
 				6AD40EA41EB4402200905622 /* Frameworks */,
 				6AD40EA51EB4402200905622 /* Resources */,
+				20AE16C341368A481365AA00 /* [CP] Embed Pods Frameworks */,
+				69B042FAC986AC5E48C87142 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20AE16C341368A481365AA00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project UAS/Pods-Project UAS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		299377368B63771FD5E43C9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69B042FAC986AC5E48C87142 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project UAS/Pods-Project UAS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6AD40EA31EB4402200905622 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		6AD40EBA1EB4402200905622 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88434F1F7780C8328E35921E /* Pods-Project UAS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Project UAS/Info.plist";
@@ -268,6 +344,7 @@
 		};
 		6AD40EBB1EB4402200905622 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C328F0AD3460751D8585E272 /* Pods-Project UAS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Project UAS/Info.plist";
